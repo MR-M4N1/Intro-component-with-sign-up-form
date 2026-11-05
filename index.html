@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./index.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+
+<body>
+
+  <main>
+
+    <section class="txtContainer">
+      <h1>Learn to code by watching others</h1>
+
+      <p class="description">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is
+        great, but understanding how developers think is invaluable.
+      </p>
+
+    </section>
+
+    <section class="formContainer">
+
+      <div class="advertisementBox">
+        <p class="adTxt">
+          <span> Try it free 7 days </span> then $20/mo. thereafter
+        </p>
+      </div>
+
+      <form novalidate>
+
+        <div class="inputContainer">
+          <label for="first_name_input" class="visually-hidden">First Name</label>
+
+          <div class="inputWrapper">
+
+            <input id="first_name_input" autocomplete="given-name" type="text" placeholder="First Name" name="firstName"
+              aria-invalid="false">
+            <img class="errorIcon hidden" src="./assets/images/icon-error.svg" alt="">
+          </div>
+          <p id="first_name_error" class="errorTxt hidden">First Name cannot be empty</p>
+
+
+        </div>
+
+
+        <div class="inputContainer">
+          <label for="last_name_input" class="visually-hidden">Last Name</label>
+
+          <div class="inputWrapper">
+
+            <input autocomplete="family-name" id="last_name_input" type="text" name="lastName" placeholder="Last Name"
+               aria-invalid="false">
+            <img class="errorIcon hidden" src="./assets/images/icon-error.svg" alt="">
+          </div>
+          <p id="last_name_error" class="errorTxt hidden">Last Name cannot be empty</p>
+
+        </div>
+
+        <div class="inputContainer">
+          <label for="email_input" class="visually-hidden">Email Address</label>
+
+          <div class="inputWrapper">
+
+            <input class="" id="email_input" type="email" placeholder="Email Address" name="email" autocomplete="email"
+             aria-invalid="false">
+            <img class="errorIcon hidden" src="./assets/images/icon-error.svg" alt="">
+          </div>
+          <p class="errorTxt hidden" id="email_error">Looks like this is not an email</p>
+
+        </div>
+
+        <div class="inputContainer">
+          <label for="password_input" class="visually-hidden">Password</label>
+
+          <div class="inputWrapper">
+
+            <input class="" id="password_input" type="password" placeholder="Password" name="password"
+              autocomplete="new-password" aria-invalid="false">
+            <img class="errorIcon hidden" src="./assets/images/icon-error.svg" alt="">
+          </div>
+          <p id="password_error" class="errorTxt hidden">Password cannot be empty</p>
+
+        </div>
+
+        <button type="submit">Claim your free trial</button>
+
+        <p class="agreementTxt">
+          By clicking the button, you are agreeing to our <span>Terms and Services </span>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <aside class="attribution">
+    Challenge by <a rel="noopener noreferrer" href="https://www.frontendmentor.io?ref=challenge"
+      target="_blank">Frontend Mentor</a>.
+    Coded by <a rel="noopener noreferrer" href="https://github.com/MR-M4N1" target="_blank">MR-M4N1</a>.
+  </aside>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
